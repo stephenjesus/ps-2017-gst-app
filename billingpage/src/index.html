@@ -10,18 +10,18 @@
 </head>
 <body>
   
-             <marquee>      <h1>  Billing Page  </h1> </marquee>
+                  <h1><----------------------Billing Page----------------------></h1> 
 
 
 
-                <form action='http://localhost:5000/searchdb' method='GET'>
+       <form action='http://localhost:2500/searchdb' method='GET'>
     <div>
         <label> Search Box </label><br>
 <br>  
     <div>
-      <input type="text" class="st" autofocus placeholder="Search by product_code?"/>
+      <input type="text" class="st" name="product_code" autofocus placeholder="Search by product_code?"/>
 
-      <button type="submit" class="sbut">search</button>
+      <button type="submit" class="sbut" onclick="onSearchMe();">search</button>
     </div>
       </div>
       
