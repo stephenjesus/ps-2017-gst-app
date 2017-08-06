@@ -19,7 +19,7 @@ welcome='<--------PRODUCT_ENTRY-------->';
         product_gst:string;
     }];
   onClickMe() {
-    this.clickMessage ='5';
+    this.clickMessage ='2';
   }
 
   onSearchMe(){
