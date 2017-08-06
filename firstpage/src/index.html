@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Demo</title>
+  <base href="/">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" type="image/x-icon" href="favicon.ico">
+  <!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+</head>
+<body>
+
+ <marquee><h1>GST Billing App </h1></marquee>
+      <h1>PRODUCT_ENTRY</h1>
+      <marquee><h3><----------------NEW PRODUCT_ENTRY-----------------------></h3></marquee>
+ <p>
+<form action='http://localhost:3100/inserttodb' method='GET'>
+   <label> Product_Code:</label>
+    <input type='text' name='product_code' required placeholder="product_code"></input>
+  <label> Product_Name:</label>
+    <input type='text' name='product_name' placeholder="product_name"></input>
+   <label> Product_Price:</label>
+    <input type='text' name='product_price' placeholder="product_price"></input>
+    <label> Product_Gst:</label>
+    <input type='text' name='product_gst' placeholder="product_gst"></input></br>
+</br>    <input type='submit' value='Submit' class="butn"> </input>
+</form></p>
+
+
+
+<app-root> </app-root>
+
+   </br>
+ <marquee><h2>  DELETE PRODUCT_FROM DATABASE---->>>>>>xxxx </h2></marquee>
+
+  <span>
+  <form action='http://localhost:3100/deletedb' method='GET'>
+    <label> Enter Product_Code:(delete):</label>
+    <input type='text' name='product_code' placeholder="product_code" required></input> 
+    </br>
+    <input type='submit' value='Delete' class="butn" > </input>
+  </form>
+  </span></br>
+ 
+ <marquee>  <h2>UPDATE OR EDIT PRODUCT_FROM DATABASE!!! </h2></marquee>
+   <span>
+  <form action='http://localhost:3100/editdb' method='GET'>
+     <label> Product_Details(edit):</label>
+    <input type='text' name='product_code' required placeholder="product_code"></input>
+    <input type='text' name='product_name' placeholder="product_name"></input>
+    <input type='text' name='product_price' placeholder="product_price"></input> 
+    <input type='text' name='product_gst' placeholder="product_gst"></input>
+    </br>
+    <input type='submit' value='Edit' class="butn"> </input>
+  </form>
+  </span>
+  
+   
+  
+  
+</body>
+</html>

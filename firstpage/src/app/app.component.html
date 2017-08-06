@@ -1,0 +1,22 @@
+<!--The content below is only a placeholder and can be replaced.-->
+
+
+                <h1>{{welcome}}</h1>
+                <table class="table">
+                    <tr>
+                        <th>S.no</th>
+                        <th>Product_Code</th>
+                        <th>Product_Name</th>
+                        <th>Product_Price</th>  
+                        <th>Product_Gst</th>
+                        
+                         <tr *ngFor="let product_name of products; let i = index">
+                          <td>{{i + 1}}</td>
+                        <td>{{product_name.product_code}}</td>
+                        <td>{{product_name.product_name}}</td>
+                           <td>{{product_name.product_price}}</td>
+                        <td>{{product_name.product_gst}}</td>
+               
+               
+                </table>
+
